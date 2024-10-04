@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+     <header>
+        <nav class=" flex justify-between items-center w-11/12 mx-auto py-3">
+            <div class="logo">
+                <img src="./ph-tube-resources/Logo.png" alt="">
+            </div>
+            <div class="search">
+                <label class="input input-bordered flex items-center gap-2">
+                    <input type="text" class="grow" placeholder="Search" id="search-input" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      class="h-4 w-4 opacity-70">
+                      <path
+                        fill-rule="evenodd"
+                        d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </label>
+            </div>
+            <button class=" btn">SORT</button>
+        </nav>
+        <div id="container" class=" flex gap-5 justify-center mt-5">
+
+        </div>
+     </header>
+
+     <main>
+      
+        <div id="videoContainer" class=" w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+        </div>
+
+        <!-- Open the modal using ID.showModal() method -->
+
+        <!-- Open the modal using ID.showModal() method -->
+<button id="customModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal">
+  <div class="modal-box" id="modal-content">
+    
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+     </main>
+
+     <script src="script/video.js"></script>
+</body>
+
+</html>
